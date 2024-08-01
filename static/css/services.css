@@ -1,0 +1,172 @@
+
+.services-container{
+  padding: 50px;
+
+}
+
+.title_services, .p_servicos{
+  padding: 0 0.5em;
+  color: black;
+}
+
+.services{
+  margin: 20px 0 0;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+.types_servicos, .type-carousel{
+ width: calc(100%/2.5);
+}
+
+.wrapper_services{
+  max-width: 1100px;
+  width: 100% !important;
+  margin: auto;
+  position: relative;
+}
+.wrapper_services .btn-category {
+  color: #2D313C;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transition: transform 0.2s linear;
+  z-index: 2;
+}
+.wrapper_services i:active{
+  transform: scale(0.85);
+  transition: transform 0.2s linear;
+}
+.wrapper_services i:first-child{
+  left: -30px;
+}
+.wrapper_services i:last-child{
+  right: -22px;
+}
+.wrapper_services .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 1) - 12px);/*muda quantos itens do carousel visivel*/
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  background-color:#000810;
+  border: none;
+  scroll-snap-align: start;
+  height: 300px;
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 10px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  padding: 0.2em;
+  max-height: 148px;
+  max-width: 148px;
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+
+.service-text-card{
+  color: #f7bb27;
+  font-size: 14px;
+}
+
+.card .img .icon-category {
+  padding: 0.5em;
+  color: white;
+  font-size: 34px;
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid gray;
+}
+
+.carousel .card .img:hover {
+  border: 5px solid #f7bb27;
+  transition: all 0.1s;
+}
+
+
+.carousel .card h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 10px 0 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .services-container{
+    padding: 10px;
+  }
+  .wrapper_services .carousel {
+    /* grid-auto-columns: calc((100% / 3) - 9px); */
+    grid-auto-columns: calc((100% / 1) - 12px);/*muda quantos itens do carousel visivel*/
+  }
+  
+  .btn_info-sobre{
+    margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper_services .carousel {
+    /* grid-auto-columns: calc((100% / 2) - 9px) ;
+     */
+     grid-auto-columns: calc((100% / 1) - 12px);/*muda quantos itens do carousel visivel*/
+  }
+
+  .services{
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .types_servicos, .type-carousel{
+    width: 100%;
+    padding: 0.5em;
+   }
+
+   .info-sobre{
+    align-items: center;
+   }
+
+   .btn_info-sobre{
+    width: 50%;
+   }
+}

@@ -1,0 +1,92 @@
+.collection{
+  padding:20px 0;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.movie-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.movie_carousel_list {
+  display: flex;
+  gap: 0.5em;
+}
+
+.movie_carousel_item {
+  opacity: 0.5;
+  cursor: pointer;
+  width: calc(100vw / 6);
+  max-height: 200px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.movie_carousel_item.active {
+  opacity: 1;
+}
+
+.movie_carousel_item:hover {
+  transform: scale(1.03);
+  border: 1px solid gray;
+  box-shadow: 0px 7px 10px -3px gray;
+}
+
+
+.movie_carousel_link{
+  display: block;
+}
+.movie_carousel_cover{
+  /* width: 100%; */
+  height: 100% !important;
+  border-radius: 5px;
+}
+
+.movie-carousel .arrow-Sliders{
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5em;
+  cursor: pointer;
+  color: black;
+  padding: 100% 1em;
+  opacity: 0;
+  transition: 0.3s;
+}
+.movie-carousel .arrow-Sliders:hover{
+  opacity: 1;
+}
+
+[data-carousel="left"]{
+  left: 0px;
+}
+[data-carousel="right"]{
+  right: 0px;
+}
+
+/* Responsividade para telas de até 1024px */
+@media screen and (max-width: 1024px) {
+  .movie_carousel_item {
+    width: calc(100vw / 4); /* Ajusta a largura dos itens */
+  }
+
+  .movie-carousel .arrow-Sliders {
+    font-size: 1.8em; /* Ajusta o tamanho das setas */
+    padding: 0.5em; /* Ajusta o padding das setas */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movie_carousel_item {
+    width: calc(100vw / 2.6); /* Ajusta a largura dos itens para telas menores */
+
+    max-height: 150px;
+  }
+
+  .movie-carousel .arrow-Sliders {
+    font-size: 1.5em; /* Ajusta o tamanho das setas */
+    padding: 0.5em; /* Ajusta o padding das setas */
+  }
+}

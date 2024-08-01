@@ -1,0 +1,16 @@
+{
+  "data": {
+    "data": [
+      { "image": "", "name": "Blog", "id": 0 },
+      { "image": "", "name": "E-commerce", "id": 1 },
+      { "image": "", "name": "Portfólio", "id": 2 },
+      { "image": "", "name": "Landing Page", "id": 3  },
+      { "image": "", "name": "Cursos", "id": 4 },
+      { "image": "", "name": "HotSite", "id": 5 },
+      { "image": "", "name": "Institucionais", "id": 6 },
+      { "image": "", "name": "Marketplace", "id": 7 },
+      { "image": "", "name": "Gestão", "id": 8 },
+      { "image": "", "name": "Serviços", "id": 9 }
+    ]
+  }
+}

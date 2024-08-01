@@ -1,0 +1,89 @@
+
+/* Container geral */
+header{
+  background-color:#000810;
+}
+.header-container{
+  height:80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* Logo */
+.logo-container{
+  height: 30px;
+}
+.logo-image{
+  max-height: 100%;
+}
+
+/* Menu de navegação */
+
+.navigation-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list{
+  display: flex;
+  gap: 2em;
+}
+
+.nav-item > a{
+  color: white;
+}
+
+
+/* Menu de navegação mobile*/
+.navigation-container-mobile{
+  display: none;
+}
+
+.header-container_menu-mobile{
+  padding: 1em;
+}
+.header-menu-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.header-menu-icon{
+  color: white;
+}
+
+/* Efeito de linha abaixo do texto com hover */
+.texto-com-hover {
+  position: relative;
+  display: inline-block;
+}
+.texto-com-hover .linha {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7bb27;
+  transition: width 0.3s ease;
+}
+.texto-com-hover:hover .linha {
+  width: 100%;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width:800px) {
+  .header-container{
+    height: auto;
+  }
+  .navigation-container-mobile{
+    display: block;
+  }
+  
+  .navigation-container{
+    display: none;
+  }
+}
