@@ -57,7 +57,7 @@
               <div class="nav-underline linha"></div>
             </li>
             <li class="nav-item texto-com-hover">
-              <a href="#works">Trabalhos</a>
+              <a href="clients">Clientes</a>
               <div class="nav-underline linha"></div>
             </li>
             <li class="nav-item texto-com-hover">
@@ -93,7 +93,7 @@
           <li><a class="li_dropdown-header" href="#services" style="color: #f7bb27;">Serviços</a></li>
           <hr>
           <li>
-            <a class="li_dropdown-header" href="#works" style="color: #f7bb27;">Trabalhos</a>
+            <a class="li_dropdown-header" href="#clients" style="color: #f7bb27;">Clientes</a>
           </li>
           <hr>
           <li><a class="li_dropdown-header" href="#contato" style="color: #f7bb27;">Contato</a></li>
@@ -140,26 +140,30 @@
 
     <section class="about-container">
       <div class="container about">
-        <h1 class="font-semibold title_services mt-5">Sobre</h1>
+        
+        <h2 class="font-semibold title_services mt-5">Sobre</h2>
+        <div class="p-5y">
+        <p class="p-description">A ConstSoft foi fundada por colegas de faculdade apaixonados por tecnologia e programação, com a visão de criar soluções digitais que agreguem valor e impulsionem o crescimento dos clientes. Durante seus estudos, perceberam o potencial transformador da tecnologia para os negócios. Enfrentaram desafios iniciais com dedicação e perseverança, utilizando suas habilidades complementares para desenvolver soluções web personalizadas com excelência e compromisso em entregar resultados excepcionais.</p>
 
-        <p class="p-5">A ConstSoft foi fundada por colegas de faculdade apaixonados por tecnologia e programação, com a visão de criar soluções digitais que agreguem valor e impulsionem o crescimento dos clientes. Durante seus estudos, perceberam o potencial transformador da tecnologia para os negócios. Enfrentaram desafios iniciais com dedicação e perseverança, utilizando suas habilidades complementares para desenvolver soluções web personalizadas com excelência e compromisso em entregar resultados excepcionais.</p>
+        <img src="../static/images/imageProjects.jpg" alt="imagens de projetos" width="500px" style="object-fit: cover;">
+        </div>
 
         <h2 class="text-center">Aqui você encontra</h2>
         <div class="mt-5 d-flex about-value-container">
           <div class="card-value">
             <i class="fa-solid fa-dna about-icon-value"></i>
-            <h4>Solução Personalizada </h4>
-            <p>Transforme desafios em oportunidades com uma solução feita sob medida para suas necessidades. Nosso software foi desenvolvido para resolver problemas específicos, otimizando processos e aumentando a eficiência.</p>
+            <h4>Soluções Personalizadas</h4>
+            <p>Resolvemos seus desafios com uma solução sob medida, otimizando processos e aumentando a eficiência.</p>
           </div>
           <div class="card-value">
             <i class="fa-solid fa-user about-icon-value"></i>
             <h4>Experiência do Usuário</h4>
-            <p>Desfrute de uma interface fácil de usar e altamente funcional. Com um design centrado no usuário, garantimos que a navegação seja simples e a adoção rápida, para que você possa focar no que realmente importa.</p>
+            <p>Interface fácil de usar que garante uma navegação simples e adoção rápida.</p>
           </div>
           <div class="card-value">
             <i class="fa-solid fa-chart-line about-icon-value"></i>
             <h4>Desempenho e Confiabilidade</h4>
-            <p>Confie em um software robusto e ágil. Com desempenho superior e alta disponibilidade, nosso produto garante que suas operações sejam executadas sem interrupções, mantendo a confiabilidade que você precisa.</p>
+            <p>Software robusto e ágil, com alta disponibilidade para operações sem interrupções.</p>
           </div>
         </div>
       </div>
@@ -168,16 +172,16 @@
     <hr class="container" id="services">
 
     <section class="services-container container" id="servico">
-      <h1 class="font-semibold title_services mt-5">Serviços</h1>
+      <h2 class="font-semibold title_services mt-5">Serviços</h2>
 
       <div class="services">
         <div class="types_servicos">
-          <p>
+          <p class=" p-description">
             Nossa empresa tem como foco o desenvolvimento web, e por meio dele é
             possível desenvolver uma variedade de softwares e soluções para
             nossos clientes.
           </p>
-          <p>
+          <p class=" p-description">
             Ao lado você pode conferir alguns tipos de softwares que podem ser desenvolvidos
             pela ConstSoft.
           </p>
@@ -208,8 +212,10 @@
       </div>
     </section>
 
-    <hr class="container" id="works">
 
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <!-- <hr class="container" id="works">
     <section class="collections ">
     <h1 class="font-semibold title_services mt-5 container">Trabalhos</h1>
     <div class="collection" data-carousel="collection">
@@ -252,18 +258,39 @@
     </div>
     
     </div>
-    </section>
-
+    </section> -->
   <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
+  <!-- <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Modal Header</h2>
       <p>Deseja ir ver o site?</p>
       <a id="goWebSite" href="#" class="btn-modal" target="_blank">Sim</a>
     </div>
-  </div>
+  </div> -->
+
+  <!-- ------------------------------------------------------------------------------------------------- -->
+
+  <hr class="container" id="clients">
+  <section class="client-container mb-5">
+    <div class="container">
+      <h2 class="font-semibold title_services mt-5">Nossos clientes</h2>
+      <p class="p-description">Desde o começo, prestamos serviços de confiança a nossos clientes. Tivemos a honra de sermos a primeira empresa na escolha das seguintes corporações:</p>
+
+      <div class="card-client-container mt-5">
+        <div class="card-client">
+          <img src="" alt="imagem cliente">
+          <h5>Utimak</h5>
+        </div>
+        <div class="card-client">
+          <img src="" alt="imagem cliente">
+          <h5>Lords</h5>
+        </div>
+        <!-- <div class="card-client">3</div> -->
+      </div>
+    </div>
+  </section>
+
 
   <hr class="container" id="contact">
 
@@ -322,12 +349,12 @@
               <div class="mb-4 contact-input-container">
                 <label for="number" class="block text-sm font-medium mb-1">Telefone / Whatsapp</label>
                 <input type="number" id="number" name="number" placeholder="Digite seu numero" class="input-text border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
-                  required/>
+                style="color: black;" required/>
               </div>
               <div class="mb-4 contact-input-container">
                 <label for="message" class="block text-sm font-medium mb-1">Mensagem</label>
                 <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem" class="input-text border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
-                  required></textarea>
+                style="color: black;" required></textarea>
               </div>
               <button type="submit" id="submitButton" class="contact-btn-form font-semibold py-2 px-4 focus:outline-none">Enviar</button>
             </form>
@@ -362,9 +389,9 @@
         <div class="modal-body">
           <h5 class="text_modal">Mensagem enviada com sucesso!</h5>
           <p>Entraremos em contato o mais rápido possível!</p>
-          <div class="container_logo-modal">
+          <!-- <div class="container_logo-modal">
             <img class="logo_img-modal" src="../static/images/tiger.png" />
-          </div>
+          </div> -->
         </div>
       </div>
      

@@ -4,8 +4,8 @@
 
 }
 
-.title_services, .p_servicos{
-  padding: 0 0.5em;
+.title_services{
+  /* padding: 0 0.5em; */
   color: black;
 }
 
@@ -14,7 +14,7 @@
   width: 100% !important;
   display: flex !important;
   flex-direction: row !important;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .types_servicos, .type-carousel{
@@ -22,7 +22,7 @@
 }
 
 .wrapper_services{
-  max-width: 1100px;
+  max-width: 400px;
   width: 100% !important;
   margin: auto;
   position: relative;
@@ -159,7 +159,6 @@
 
   .types_servicos, .type-carousel{
     width: 100%;
-    padding: 0.5em;
    }
 
    .info-sobre{

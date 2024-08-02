@@ -1,6 +1,5 @@
 .about-value-container{
   gap: 1em;
-  background-color: whitesmoke;
 }
 
 .card-value{
@@ -13,6 +12,8 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 0.5em;
+width: calc(100%/3);
+background-color: whitesmoke;
 }
 
 .about-icon-value{
@@ -22,5 +23,8 @@ gap: 0.5em;
 @media screen and (max-width:600px){
   .about-value-container{
    flex-direction: column;
+  }
+  .card-value{
+    width: 100%;
   }
 }
