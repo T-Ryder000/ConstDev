@@ -37,7 +37,6 @@
   }
 
   .card-client{
-    min-height: 200px;
-    min-width: auto;
+    max-width: auto;
   }
 }
