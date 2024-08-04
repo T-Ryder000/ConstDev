@@ -84,7 +84,7 @@ export default function services(){
   wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
   wrapper.addEventListener("mouseleave", autoPlay);
   carousel.addEventListener("click", function(e){
-    e.preventDefault();
+    // e.preventDefault();
   })
   
 }

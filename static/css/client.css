@@ -1,7 +1,6 @@
 .card-client-container{
   display: flex;
   gap: 2em;
-  justify-content: center;
 }
 
 .card-client{
